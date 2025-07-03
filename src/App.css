@@ -1,0 +1,37 @@
+@tailwind bases;
+@tailwind components;
+@tailwind utilities;
+
+header ul a{
+    @apply px-3 text-white hover:text-yellow-500 no-underline;
+    
+}
+.bg-primary{
+    background: rgb(66, 41, 202);
+
+}
+.bg-secondary{
+    background: #2b2d77;
+}
+.mobil-nav{
+    @apply fixed top-0 left-0 bg-gray-600 w-full h-[150px] py-5 ;
+}
+.mobil-nav ul{
+    @apply w-full text-center flex  font-bold 
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.project-desc{
+    @apply absolute left-0 right-0 bottom-0 top-0 bg-primary opacity-0 duration-1000 hover:opacity-100
+}
+.btn{
+    @apply bg-secondary px-4 py-2 font-bold hover:border-2 border-white text-black rounded;
+}
+html {
+    scroll-behavior: smooth;
+    
+}
